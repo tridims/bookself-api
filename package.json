@@ -1,0 +1,32 @@
+{
+  "name": "bookself_api",
+  "version": "1.0.0",
+  "description": "Submission for Dicoding course : Belajar Membuat Aplikasi Back-End untuk Pemula",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "lint": "eslint src/",
+    "lint-fix": "eslint --fix src/",
+    "prettier": "prettier src test --check",
+    "prettier-fix": "prettier src test --write",
+    "format": "npm run lint-fix && npm run prettier-fix"
+  },
+  "keywords": [],
+  "author": "Dimas Tri Mustakim",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^8.36.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.7.0",
+    "eslint-plugin-import": "^2.27.5",
+    "nodemon": "^2.0.21",
+    "prettier": "2.8.4"
+  },
+  "dependencies": {
+    "@hapi/hapi": "^21.3.0",
+    "nanoid": "^3.3.4",
+    "zod": "^3.21.4"
+  }
+}
